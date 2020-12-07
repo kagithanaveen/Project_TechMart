@@ -1,0 +1,44 @@
+<web-app>
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:odbc:techmart</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>newuser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>newuser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>existinguser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>existinguser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>servlet3</servlet-name>
+		<servlet-class>sec</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet3</servlet-name>
+		<url-pattern>sec</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>servlet4</servlet-name>
+		<servlet-class>submitcam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet4</servlet-name>
+		<url-pattern>submitcam</url-pattern>
+	</servlet-mapping>	
+	 
+</web-app>
